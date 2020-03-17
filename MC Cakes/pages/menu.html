@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+	<title>Maria Cecilia's</title>
+	<meta http-equiv="refresh" content="">
+	<link rel="stylesheet" type="text/css" href="../css/index-stylesheet.css">
+</head>
+<body>
+	<div class="postertop"><center>
+		<img src="../images/logo.jpg" style="width: 25%;">
+		<!--
+		<img src="../images/cakeadtop.jpg" width="100%">
+	-->
+		</center>
+	</div>
+	<div class="topnav">
+		<img class="navlogo" src="../images/logo.jpg">
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="location.html">Location</a></li>
+			<li><a href="history.html">History</a></li>			
+			<li><a href="contact.html">Contact</a></li>
+			<li style="float: right;"><a class="order" href="https://www.facebook.com/MariaCeciliacakes/" target="blank">Order Now!</a></li>
+		</ul>	
+	</div>
+	
+	<div class="menu">
+		<img src="../images/menu.jpg" style="width: 100%;">
+	</div>
+		
+	<div class="footer">
+
+		<div>
+			<img src="../images/phflag.png" style="height: 25px; width: *; float: right;">
+		</div>
+		<div>
+			<a href="https://www.facebook.com/MariaCeciliacakes/" target="blank"><img src="../images/fb-icon.png" style="height: 25px; width: *; float: left;"></a>
+		</div>
+		<div style="text-align: center;" >
+		©2020 Maria Cecilia Cake & Ice Cream Shop. All Rights Reserved.
+		</div>
+	</div>
+</body>
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 5000); // Change image every 2 seconds
+	}
+</script>
+</html>
